@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Playfair Display, sans-serif;
+}
+
+header, nav {
+    background-color: #333;
+    color: #fff;
+    padding: 5px; /* Reduced padding */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly; /* space the header content evenly */
+    align-items: center;
+}
+
+#menu-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-section {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+.menu-section h2 {
+    color: #333;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 50%; /* Adjust this value as needed */
+}
+
+.history-text-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+}
+
+.history-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.customer-reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.customer-review-container {
+    margin: 50px;
+    max-width: 300px; /* Adjust this if needed */
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-review {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.customer-name {
+    font-style: italic;
+    margin-top: 10px;
+    color: #777;
+}
+
+.location-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.location-info {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+}
+
+.location-info h3 {
+    color: #333;
+}
+
+.location-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Additional styling for map iframe */
+.map-container iframe {
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Optional: Add hover effect */
+.footer-section:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+.menu-category {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-category h2 {
+    color: #333;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    color: #777;
+}
