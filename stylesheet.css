@@ -1,3 +1,10 @@
+@Font-face {
+    font-family: 'Cloister Black';
+    src: url('font/CloisterBlack.ttf');
+    font-weight: 1000;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +22,11 @@ nav {
     display: flex;
     justify-content: space-evenly; /* space the header content evenly */
     align-items: center;
+}
+
+#menu-btn {
+    color: inherit;
+    text-decoration: none;
 }
 
 #menu-button {
@@ -73,6 +85,11 @@ body.menu-open {
 
 #menu-button:hover {
     background-color: #777;
+}
+
+.hours-h3 {
+    font-family: "Cloister Black", sans-serif;
+    font-size: 35px;
 }
 
 
