@@ -159,9 +159,9 @@ footer {
 
 .menu-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .item-name {
@@ -169,5 +169,5 @@ footer {
 }
 
 .item-price {
-    color: #777;
+    color: orangered;
 }
