@@ -12,10 +12,16 @@ body {
 }
 
 header, nav {
+    position: fixed;
+    width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 5px; /* Reduced padding */
+    padding: 10px; /* Reduced padding */
     text-align: center;
+}
+
+#logo {
+    position: relative;
 }
 
 nav {
@@ -24,9 +30,13 @@ nav {
     align-items: center;
 }
 
-#menu-btn {
+#menu-btn, #home-btn, #history-btn, #takenbake-btn {
     color: inherit;
     text-decoration: none;
+}
+
+.categories {
+
 }
 
 #menu-button {
@@ -87,7 +97,7 @@ body.menu-open {
     background-color: #777;
 }
 
-.hours-h3 {
+.hours-h3, .directions-h3, .contactus-h3, .visitus-h3, .history-h2 {
     font-family: "Cloister Black", sans-serif;
     font-size: 35px;
 }
