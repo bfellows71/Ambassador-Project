@@ -1,17 +1,10 @@
-document.getElementById('menu-button').addEventListener('click', toggleMenuSections);
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+    const body = document.body;
 
-function toggleMenuSections() {
-    var appetizersSection = document.getElementById('appetizers');
-    var mainCoursesSection = document.getElementById('main-courses');
-    var dessertsSection = document.getElementById('desserts');
-
-    // Toggle visibility of menu sections
-    toggleSectionVisibility(appetizersSection);
-    toggleSectionVisibility(mainCoursesSection);
-    toggleSectionVisibility(dessertsSection);
-}
-
-function toggleSectionVisibility(section) {
-    var currentDisplay = window.getComputedStyle(section).display;
-    section.style.display = currentDisplay === 'none' ? 'block' : 'none';
-}
+    menuButton.addEventListener('click', function () {
+        menu.classList.toggle('menu-open');
+        body.classList.toggle('menu-open');
+    });
+});

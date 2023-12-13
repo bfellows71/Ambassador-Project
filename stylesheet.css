@@ -37,6 +37,45 @@ nav {
     color: #333;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen */
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Ensure it's on top of other elements */
+    transition: right 0.3s ease-in-out;
+}
+
+#menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#menu-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    background-color: #777;
+}
+
+
 .history-text-container {
     margin: 0 auto;
     max-width: 800px;
@@ -133,7 +172,6 @@ footer {
 
 .footer-section p {
     font-size: 16px;
-    line-height: 1.5;
 }
 
 /* Optional: Add hover effect */
@@ -141,4 +179,7 @@ footer {
     background-color: #555;
     transition: background-color 0.3s;
 }
+
+
+
 
