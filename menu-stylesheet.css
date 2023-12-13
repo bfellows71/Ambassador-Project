@@ -36,13 +36,6 @@ nav {
 .menu-section h2 {
     color: #333;
 }
-
-.banner img {
-    width: 100%;
-    height: auto;
-    max-height: 50%; /* Adjust this value as needed */
-}
-
 .history-text-container {
     margin: 0 auto;
     max-width: 800px;
