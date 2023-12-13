@@ -1,0 +1,127 @@
+@Font-face {
+    font-family: 'Cloister Black';
+    src: url('font/CloisterBlack.ttf');
+    font-weight: 1000;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Playfair Display, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, nav {
+    background-color: #333;
+    color: #fff;
+    padding: 5px; /* Reduced padding */
+    text-align: center;
+}
+
+.h1-header {
+    text-align: center;
+    background-color: orange;
+    margin-top: 60px;
+    font-family: 'Cloister Black', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-section {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+.menu-section h2 {
+    color: #333;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+section {
+    flex: 1;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.font-header {
+    font-family: 'Cloister Black', sans-serif;
+    font-size: 50px;
+}
+
+#shipping-info .shipping-info-header {
+    font-size: 30px;
+}
+
+.option-box {
+    background-color: #f2f2f2;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 2.0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    border-top: 2px solid #fff;
+    padding-top: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.footer-section p {
+    font-size: 16px;
+}
+
+/* Optional: Add hover effect */
+.footer-section:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
