@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Playfair Display, sans-serif;
+}
+
+header, nav {
+    background-color: #333;
+    color: #fff;
+    padding: 5px; /* Reduced padding */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly; /* space the header content evenly */
+    align-items: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
