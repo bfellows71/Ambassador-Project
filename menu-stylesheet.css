@@ -1,14 +1,34 @@
+@Font-face {
+    font-family: 'Cloister Black';
+    src: url('font/CloisterBlack.ttf');
+    font-weight: 1000;
+    font-style: normal;
+}
+
+@Font-face {
+    font-family: 'Cloister Black';
+    src: url('font/CloisterBlack.ttf');
+    font-weight: 1000;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Playfair Display, sans-serif;
 }
 
-header, nav {
+header, .navbar {
+    position: fixed;
+    width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 5px; /* Reduced padding */
+    padding: 10px; /* Reduced padding */
     text-align: center;
+}
+
+#logo {
+    position: relative;
 }
 
 nav {
@@ -17,11 +37,21 @@ nav {
     align-items: center;
 }
 
+#menu-btn, #home-btn, #history-btn, #takenbake-btn {
+    color: inherit;
+    text-decoration: none;
+}
+
+.spirits-h2, .pasta-h2, .pizza-h2, .sandwiches-h2, .appetizer-h2, .salads-h2 {
+    font-size: 50px;
+    font-family: "Cloister Black", sans-serif;
+}
+
 .categories {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: darkorange;
     padding: 10px;
 }
 
@@ -29,7 +59,7 @@ nav {
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 25px;
     transition: color 0.3s ease;
 }
 
@@ -111,8 +141,14 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; /* Add this property to allow items to wrap to the next line */
+    justify-content: space-around;
+}
+
 .menu-item {
-    width: calc(50% - 20px); /* Adjust as needed */
+    width: calc(25% - 20px); /* Adjust as needed for 4 items in a row */
     max-width: 300px;
     margin: 10px;
     padding: 10px;
@@ -120,22 +156,28 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    float: left; /* Float the items to make them side by side */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Set a fixed height */
+    overflow: hidden; /* Prevent content overflow */
 }
 
-.menu-items {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: space-around; /* Adjust as needed */
+
+.item-description {
+    font-size: 15px;
+    line-height: 1.7;
+    font-style: oblique;
 }
 
 .item-name {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .item-price {
-    color: orangered;
+    color: red;
+    font-size: 20px;
 }
 
 #scroll-to-top {

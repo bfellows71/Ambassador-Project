@@ -10,10 +10,12 @@
 
 <body>
 
-<nav>
-    <a href="menu.html" id="menu-btn">Menu</a>
-    <img src="img/ambassador_logo.png" alt="#" width="300">
-    <button id="menu-button">☰</button>
+<nav class = "navbar">
+    <img src="img/ambassador_logo.png" id="logo" alt="#" width="300">
+    <a href="index.html" id="home-btn">HOME</a>
+    <a href="menu.html" id="menu-btn">MENU</a>
+    <a href="index.html" id="history-btn">HISTORY</a>
+    <a href="take-n-bake.html" id="takenbake-btn">TAKE-N-BAKE</a>
 </nav>
 
 <div id="banner">
@@ -34,8 +36,8 @@
 <!-- menu items -->
 <section id="appetizers" class="menu-category">
     <div class="category-header">
-        <h2>APPETIZERS</h2>
-        <p><i>Every Great Pizza Starts with Our Thin Crisp Crust, House-made for over 50 years!</i></p>
+        <h2 class = "appetizer-h2">APPETIZERS</h2>
+        <p><i>Let's start with an appetizer!</i></p>
     </div>
     <div class="menu-items">
         <div class="menu-item">
@@ -43,6 +45,7 @@
             <p class="item-description"> Basket of Corn Tortilla Chips with 8oz Hot Nacho Cheese </p>
             <p class="item-price">$4</p>
         </div>
+
         <div class="menu-item">
             <p class="item-name">Homemade Salsa</p>
             <p class="item-description"> 8oz</p>
@@ -50,34 +53,16 @@
         </div>
 
         <div class="menu-item">
-            <p class="item-name">Sour Cream</p>
-            <p class="item-description">4oz</p>
-            <p class="item-price">$.80</p>
-        </div>
-
-        <div class="menu-item">
-            <p class="item-name">Jalapenos</p>
-            <p class="item-description">4oz</p>
-            <p class="item-price">$.80</p>
-        </div>
-
-        <div class="menu-item">
-            <p class="item-name">Basket of Chips</p>
-            <p class="item-price">$2</p>
-        </div>
-
-        <div class="menu-item">
             <p class="item-name">BAKED POTATO SHELLS</p>
-            <p class="item-description">Filled with Sautéed Italian Onion Sausage , Wisconsin Cheddar and Parmesan
-                Cheese, Served with Sour Cream.</p>
-            <p> Allow 15 minutes.</p>
+            <p class="item-description">Filled with Sautéed Italian Onion Sausage, Wisconsin Cheddar and Parmesan Cheese, Served with Sour Cream.</p>
+            <p>Allow 15 minutes.</p>
             <p class="item-price">$6</p>
         </div>
 
         <div class="menu-item">
             <p class="item-name">BAKED CHICKEN WINGS</p>
             <p class="item-description">Spicy Buffalo Hot Sauce</p>
-            <p> Allow 15 minutes.</p>
+            <p class = "item-description"> Allow 15 minutes.</p>
             <p class="item-price">$7</p>
             <p class="item-name">Ranch or Blue Cheese</p>
             <p class="item-price">$1</p>
@@ -135,8 +120,8 @@
 
 
 <section id="pizza" class="menu-category">
-    <h2>PIZZA</h2>
-    <p><i>Experience the heartiness of our main courses, each one a delicious journey on your plate.</i></p>
+    <h2 class = "pizza-h2">PIZZA</h2>
+    <p><i>Every Great Pizza Starts with Our Thin Crisp Crust, House-made for over 50 years!</i></p>
     <div class="menu-items">
 
         <div class="menu-item">
@@ -208,17 +193,21 @@
             <p class="item-description">BASIC CHEESE - Made with our Homemade Thin Crisp Crust</p>
             <p class="item-price">$9/$11/$13</p>
             <p class="item-description">Add ingredients listed below to our basic cheese</p>
-            <p class="item-price">Sausage, Pepperoni, Ham, Smoked Bacon, Anchovies, or Feta Cheese - $1/$2/$3</p>
-            <p class="item-price">Shrimp or Marinated Chicken - $3/$4/$5</p>
-            <p class="item-price">Spinach, Mushrooms, Broccoli, Zucchini, Pineapple, Diced Jalapenos, Black Olives,
-                Green Olives, Tomato, Green Pepper, Onions, Chopped Garlic, or Banana Peppers - $1/$1/$2</p>
+            <p class="item-description">Sausage, Pepperoni, Ham, Smoked Bacon, Anchovies, or Feta Cheese </p>
+            <p class ="item-price"> $1/$2/$3</p>
+            <p class="item-description">Shrimp or Marinated Chicken </p>
+            <p class ="item-price"> $3/$4/$5</p>
+            <p class="item-description">Spinach, Mushrooms, Broccoli, Zucchini, Pineapple, Diced Jalapenos, Black Olives,
+                Green Olives, Tomato, Green Pepper, Onions, Chopped Garlic, or Banana Peppers</p>
+            <p class ="item-price"> $3/$4/$5</p>
+
         </div>
     </div>
 </section>
 
 <section id="pasta" class="menu-category">
-    <h2>PASTA</h2>
-    <p><i>Conclude your meal on a sweet note with our divine desserts that will leave you craving for more.</i></p>
+    <h2 class = "pasta-h2">PASTA</h2>
+    <p><i>Made with our Homemade Sauce using Meat, seven different Spices, topped with a dash of Grated Parmesan and served with Fresh Baked Garlic Toast.</i></p>
 
     <div class="menu-items">
 
@@ -234,7 +223,10 @@
             <p class="item-name">RAVIOLI</p>
             <p class="item-description">Italian Beef, Caramelized Onions & Herbed Ricotta Cheese Stuffed Ravioli topped
                 with our Homemade Italian Meat Sauce and Grated Parmesan. Served with Garlic Toast.</p>
-            <p class="item-price">Small (3) $4 | Large (5) $8</p>
+            <p class="item-description">Small (3)</p>
+            <p class = "item-price"> $4 </p>
+            <p class = "item-description">Large (5) </p>
+            <p class = "item-price"> $8</p>
         </div>
 
         <div class="menu-item">
@@ -266,18 +258,25 @@
 
         <div class="menu-item">
             <p class="item-description">Want to add meat to the Specialty Pasta or Pesto Pasta?</p>
-            <p class="item-price">Choose from the following:</p>
-            <p class="item-price">Sliced Chicken Breast $2</p>
-            <p class="item-price">Norwegian Salmon $4</p>
-            <p class="item-price">Lobster Sensation $5</p>
+            <p class="item-description">Choose from the following:</p>
+            <p class="item-description">Sliced Chicken Breast</p>
+            <p class = "item-price">$2</p>
+            <p class="item-description">Norwegian Salmon</p>
+            <p class = "item-price">$4</p>
+            <p class="item-description">Lobster Sensation</p>
+            <p class = "item-price">$5</p>
         </div>
 
     </div>
 </section>
 
 <section id="salads" class="menu-category">
-    <h2>SALADS</h2>
-    <p><i>25 ounce Spirits (Strawberry Daiquiri and Pina Colada have an optional smaller 10 oz.)</i></p>
+    <h2 class = "salads-h2">SALADS</h2>
+    <p><i>A Meal In A Bowl • Please, No Substitutions </i></p>
+    <p style="text-align: center">Salads can be made with fresh Baby Spinach or Fresh Cut Romaine Lettuce for an additional $2 </p>
+
+    <p style="text-align: center">House Dressings (served on the side): Homemade Ranch, Homemade French, Homemade Italian, Caesar, Blue Cheese, Thousand Island, Balsamic Vinegar, Red Wine Vinegar & Oil, and FF Raspberry Vinaigrette. </p>
+
 
     <div class="menu-items">
         <div class="menu-item">
@@ -299,8 +298,10 @@
             <p class="item-description">Freshly Chopped Romaine Lettuce, Croutons, Onions, & Tomatoes topped with
                 Shredded Parmesan Cheese & Caesar Dressing. Served with Fresh Baked Garlic Toast</p>
             <p class="item-price">$7</p>
-            <p class="item-description">Add Garlic Herb Grilled Chicken Breast $2</p>
-            <p class="item-description">Add Wild Alaskan Salmon $4</p>
+            <p class="item-description">Add Garlic Herb Grilled Chicken Breast </p>
+            <p class = "item-price"> $2</p>
+            <p class="item-description">Add Wild Alaskan Salmon</p>
+            <p class = "item-price"> $4</p>
         </div>
 
         <div class="menu-item">
@@ -354,8 +355,9 @@
 </section>
 
 <section id="sandwiches" class="menu-category">
-    <h2>SANDWICHES</h2>
-    <p><i>25 ounce Spirits (Strawberry Daiquiri and Pina Colada have an optional smaller 10 oz.)</i></p>
+    <h2 class = "sandwiches-h2">SANDWICHES</h2>
+    <p><i>Ambassador Submarine Sandwiches
+        Served on our Hot Crusty Italian Bread</i></p>
 
 
     <div class="menu-items">
@@ -404,8 +406,10 @@
             <p class="item-name">CUDIGHI</p>
             <p class="item-description">A Classic Upper-Peninsula version of this traditional Italian Sausage.
                 House-made for over 50 years!</p>
-            <p class="item-description">with House-made Pizza Sauce & Wisconsin White Colby $7</p>
-            <p class="item-description">with Mustard & Onions $7</p>
+            <p class="item-description">with House-made Pizza Sauce & Wisconsin White Colby </p>
+            <p class = "item-price"> $7</p>
+            <p class="item-description">with Mustard & Onions </p>
+            <p class = "item-price"> $7</p>
         </div>
 
         <div class="menu-item">
@@ -482,14 +486,15 @@
             <p class="item-description">Tender Sliced Chicken Breast Baked and served with Fresh Spinach, Tomatoes, and
                 Feta Cheese.</p>
             <p class="item-price">$8</p>
-            <p class="item-description">Substitute Norwegian Salmon $10</p>
+            <p class="item-description">Substitute Norwegian Salmon </p>
+            <p class = "item-price"> $10</p>
         </div>
 
     </div>
 </section>
 
 <section id="spirits" class="menu-category">
-    <h2>SPIRITS</h2>
+    <h2 class = "spirits-h2">SPIRITS</h2>
     <p><i>25 ounce Spirits (Strawberry Daiquiri and Pina Colada have an optional smaller 10 oz.)</i></p>
 
     <div class="menu-items">
@@ -497,8 +502,10 @@
         <div class="menu-item">
             <p class="item-name">PINA COLADA (Blended)</p>
             <p class="item-description">Rum, Pineapple Juice and Coconut Cream</p>
-            <p class="item-price">Fish Bowl 25 oz. $9</p>
-            <p class="item-price">Smaller sized 10 oz. $4</p>
+            <p class="item-description">Fish Bowl 25 oz. </p>
+            <p class = "item-price"> $9</p>
+            <p class="item-description">Smaller sized 10 oz. </p>
+            <p class = "item-price"> $4</p>
         </div>
 
         <div class="menu-item">
