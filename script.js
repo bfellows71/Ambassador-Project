@@ -17,11 +17,12 @@ function scrollToTop() {
     });
 }
 
-// Show/hide scroll-to-top button based on scroll position
+// show/hide scroll button
 window.onscroll = function () {
     scrollFunction();
 };
 
+// scroll function
 function scrollFunction() {
     var scrollToTopButton = document.getElementById("scroll-to-top");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -29,6 +30,27 @@ function scrollFunction() {
     } else {
         scrollToTopButton.style.display = "none";
     }
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 8000); // 8 seconds
 }
 
 

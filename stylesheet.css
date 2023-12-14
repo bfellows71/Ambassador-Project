@@ -17,7 +17,7 @@ header, nav {
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     text-align: center;
 }
 
@@ -27,7 +27,7 @@ header, nav {
 
 nav {
     display: flex;
-    justify-content: space-evenly; /* space the header content evenly */
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -66,14 +66,14 @@ nav {
 #menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Start off-screen */
+    right: -250px;
     height: 100%;
     width: 250px;
     background-color: #333;
     color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 2; /* Ensure it's on top of other elements */
+    z-index: 2;
     transition: right 0.3s ease-in-out;
 }
 
@@ -110,7 +110,8 @@ nav {
     padding: 50px;
     background-color: #f4f4f4;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+    /* box shadow rgb. the last value is for opacity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .history-text {
@@ -122,17 +123,17 @@ nav {
 .location-container {
     display: flex;
     justify-content: space-around;
-    border: 2px solid #000; /* Black border */
-    padding: 20px; /* Add padding for better spacing */
-    box-sizing: border-box; /* Include padding in the width */
+    border: 2px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .location-box {
-    flex: 1; /* Allow each box to take up equal space */
+    flex: 1;
     padding: 15px;
     margin: 10px;
-    border: 1px solid #000; /* Black border for each box */
-    box-sizing: border-box; /* Include padding and border in the box size */
+    border: 1px solid #000;
+    box-sizing: border-box;
 }
 
 .location-info {
@@ -148,7 +149,6 @@ nav {
     color: #555;
 }
 
-/* Additional styling for map iframe */
 .map-container iframe {
     border-radius: 8px;
 }
@@ -180,7 +180,6 @@ footer {
     font-size: 16px;
 }
 
-/* Optional: Add hover effect */
 .footer-section:hover {
     background-color: #555;
     transition: background-color 0.3s;
