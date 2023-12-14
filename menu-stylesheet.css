@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Playfair Display, sans-serif;
+    background-color: floralwhite;
 }
 
 header, .navbar {
@@ -43,7 +44,7 @@ nav {
 }
 
 .spirits-h2, .pasta-h2, .pizza-h2, .sandwiches-h2, .appetizer-h2, .salads-h2 {
-    font-size: 50px;
+    font-size: 75px;
     font-family: "Cloister Black", sans-serif;
 }
 
@@ -51,7 +52,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkorange;
+    background-color: orange;
     padding: 10px;
 }
 
@@ -80,6 +81,7 @@ nav {
     text-align: center;
     padding: 20px;
     border: 1px solid #ccc;
+
     margin: 20px;
 }
 
@@ -134,7 +136,7 @@ footer {
     align-items: center;
     margin: 20px;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: floralwhite;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
