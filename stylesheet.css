@@ -63,10 +63,6 @@ nav {
     color: #333;
 }
 
-body.menu-open {
-    overflow: hidden;
-}
-
 #menu {
     position: fixed;
     top: 0;
@@ -104,6 +100,7 @@ body.menu-open {
 .hours-h3, .directions-h3, .contactus-h3, .visitus-h3, .history-h2 {
     font-family: "Cloister Black", sans-serif;
     font-size: 45px;
+    margin: 0;
 }
 
 
@@ -122,45 +119,23 @@ body.menu-open {
     color: #333;
 }
 
-.customer-reviews-container {
+.location-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #000; /* Black border */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
-.customer-review-container {
-    margin: 50px;
-    max-width: 350px; /* Adjust this if needed */
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.customer-review {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.customer-name {
-    font-style: italic;
-    margin-top: 10px;
-    color: #777;
-}
-
-.location-section {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.map-container {
-    margin-top: 20px;
+.location-box {
+    flex: 1; /* Allow each box to take up equal space */
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #000; /* Black border for each box */
+    box-sizing: border-box; /* Include padding and border in the box size */
 }
 
 .location-info {
-    margin-top: 20px;
-    padding-top: 20px;
     text-align: center;
 }
 

@@ -143,41 +143,45 @@ footer {
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap; /* Add this property to allow items to wrap to the next line */
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .menu-item {
     width: calc(25% - 20px); /* Adjust as needed for 4 items in a row */
-    max-width: 300px;
+    max-width: 500px;
     margin: 10px;
     padding: 10px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-sizing: border-box;
-    display: flex;
+    box-sizing: content-box;
+    display: -ms-flexbox;
     flex-direction: column;
-    height: 400px; /* Set a fixed height */
-    overflow: hidden; /* Prevent content overflow */
+    height: auto;
+    overflow: hidden;
 }
 
 
 .item-description {
-    font-size: 15px;
-    line-height: 1.7;
-    font-style: oblique;
+    font-size: 20px;
+}
+
+.item-addons {
+    color: orange;
+    border-top: 2px solid black;
 }
 
 .item-name {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .item-price {
-    color: red;
-    font-size: 20px;
+    color: olive;
+    font-size: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #scroll-to-top {

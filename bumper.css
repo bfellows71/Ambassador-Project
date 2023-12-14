@@ -1,28 +1,71 @@
-@font-face {
+@Font-face {
     font-family: 'Cloister Black';
     src: url('font/CloisterBlack.ttf');
     font-weight: 1000;
     font-style: normal;
 }
 
+
 body {
     margin: 0;
     padding: 0;
     font-family: Playfair Display, sans-serif;
-    background-color: floralwhite;
+    background-image: url('img/murals.jpg');
+    background-size: cover; /* or use 'contain' depending on your needs */
+    background-repeat: no-repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
-header, nav {
-    position: fixed;
-    width: 100%;
+nav {
     background-color: #333;
-    color: #fff;
-    padding: 10px; /* Reduced padding */
+    padding: 15px 0;
     text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+#logo {
+    margin: 0 20px;
+}
+
+.sections {
+    background-color: rgba(255,255, 255, 0.6);
+    max-width: 800px;
+    margin: 30px auto; /* Adjust or remove this margin as needed */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #222;
+    font-size: 55px;
+    font-family: "Cloister Black", sans-serif;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: black;
+}
+
+
+.sections {
+    max-width: 800px;
+    margin: 30px auto;
+    border: 2px solid #000; /* Black border */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+section {
+    margin-bottom: 30px;
 }
 
 #logo {
@@ -30,7 +73,7 @@ header, nav {
 }
 
 #menu-btn, #home-btn, #history-btn, #takenbake-btn {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
@@ -51,6 +94,3 @@ nav a:hover {
     color: #ecf0f1; /* Change color on hover */
 }
 
-p {
-    line-height: 1.6;
-}
