@@ -1,15 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.getElementById('menu-button');
-    const menu = document.getElementById('menu');
-    const body = document.body;
-
-    menuButton.addEventListener('click', function () {
-        menu.classList.toggle('menu-open');
-        body.classList.toggle('menu-open');
-    });
-});
-
-
+// scroll button
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -32,6 +21,7 @@ function scrollFunction() {
     }
 }
 
+// slideshow
 let slideIndex = 0;
 showSlides();
 
@@ -42,13 +32,12 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
+    // each incrementation = next slide
     slideIndex++;
 
     if (slideIndex > slides.length) {
         slideIndex = 1;
     }
-
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 8000); // 8 seconds
 }

@@ -120,7 +120,8 @@ nav {
     color: #333;
 }
 
-.location-container {
+
+.time-container {
     display: flex;
     justify-content: space-around;
     border: 2px solid #000;
